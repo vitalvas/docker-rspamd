@@ -11,5 +11,5 @@ RUN apt update && \
 
 ADD ./conf/ /etc/rspamd/
 
-	
+CMD ["/usr/bin/rspamd", "-c", "/etc/rspamd/rspamd.conf", "-f", "-u", "_rspamd", "-g", "_rspamd"]
 
